@@ -1,0 +1,72 @@
+.sec-info {
+    color: var(--secondary);
+}
+
+.ter-info {
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.about-heading {
+    color: var(--primary);
+}
+
+.about-main {
+    color: var(--on-background);
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+
+
+@mixin dot {
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: transparent;
+    margin-left: -2rem;
+    color: transparent;
+    border-radius: 50%;
+    $border: 1px;
+    color: #fff;
+    background: var(--primary);
+    background-clip: padding-box;
+    border: solid $border transparent;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -$border;
+        border-radius: inherit;
+    }
+}
+
+.dot {
+    @include dot();
+}
+
+.dot-current {
+    @include dot();
+    box-shadow: 0 0 0 0 #000000;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+	0% {
+        box-shadow: 0 0 0 0 var(--primary);
+	}
+
+	70% {
+        box-shadow: 0 0 0 10px #cc485600;
+	}
+
+	100% {
+        box-shadow: 0 0 0 0 #cc485600;
+	}
+}
+

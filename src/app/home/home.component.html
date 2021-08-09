@@ -1,0 +1,14 @@
+<div app-theme class="home-main">
+    <app-header></app-header>
+    <div>
+        <div class="home-intro">
+            <h2 class="text-3xl font-bold"> Hello, I'm Adhithyan <span class="wave">👋</span></h2>
+            <h2 class="text-3xl font-bold mt-3">I <img class="inline mx-2" src="../../assets/web-code.svg" alt=""> things on web</h2>
+        </div>
+        <div class="flex flex-row justify-center">
+          <span *ngIf="activeTheme.name ==='light'"><img src="../../assets/home-avatar-light.svg" alt=""></span>
+          <span *ngIf="activeTheme.name ==='dark'"><img src="../../assets/home-avatar-dark.svg" alt=""></span>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

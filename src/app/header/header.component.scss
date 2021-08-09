@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2em;
+
+    .header-left, .header-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: var(--secondary);
+    }
+
+    .header-left {
+        width: 40em;
+    }
+
+    .header-right {
+        width: 15em;
+    }
+}
+
+
+.profile-name {
+    color: var(--dark-primary);
+}

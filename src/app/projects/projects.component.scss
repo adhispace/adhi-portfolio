@@ -1,0 +1,18 @@
+.projects-main {
+    color: var(--on-background);
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+.project-name {
+    color: var(--primary);
+}
+
+.project-name:hover {
+    color: var(--dark-primary);
+
+}
+
+.project-desc {
+    color: var(--secondary);
+}
