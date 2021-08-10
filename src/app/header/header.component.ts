@@ -10,6 +10,7 @@ import { ThemeService } from '../theme/theme.service';
 export class HeaderComponent implements OnInit {
 
   activeTheme: any;
+  openMenu = true;
 
   constructor(public themeService: ThemeService, public router: Router) { }
 
