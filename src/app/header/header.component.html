@@ -1,43 +1,7 @@
-<!-- <div class="header">
-    <div class="header-left">
-        <div>
-            <span class="cursor-pointer profile-name font-semibold" (click)="navigateTo('')">Adhithyan Srinivasan</span>
-        </div>
-        <span (click)="navigateTo('projects')" class="cursor-pointer font-bold">Projects</span>
-        <span (click)="navigateTo('about')" class="cursor-pointer font-bold">About</span>
-        <span (click)="navigateTo('blogs')" class="cursor-pointer font-bold">Blogs</span>
-    </div>
-    <div class="header-right mr-20 align-text-bottom">
-        <span (click)="toggleTheme()" class="cursor-pointer relative top-1">
-            <span *ngIf="activeTheme.name === 'light'"><img src="../../assets/dark-mode.svg" alt=""></span>
-            <span *ngIf="activeTheme.name === 'dark'"><img src="../../assets/light-mode.svg" alt=""></span>
-        </span>
-        <span class="text-xl cursor-pointer">
-            <a href="https://twitter.com/adhithyan_s" target="_blank"><i class="fa fa-twitter mr-2" aria-hidden="true"></i></a>
-        </span>
-        <span class="text-xl cursor-pointer">
-            <a href="https://github.com/adhispace" target="_blank"><i class="fa fa-github mr-2" aria-hidden="true"></i></a>
-        </span>
-        <span class="text-xl cursor-pointer">
-            <a href="https://www.linkedin.com/in/adhithyan-s-275323b4/" target="_blank"><i class="fa fa-linkedin mr-2" aria-hidden="true"></i></a>
-        </span>
-        <span class="text-xl cursor-pointer">
-            <a href="https://stackoverflow.com/users/8917402/adhs91" target="_blank"><i class="fa fa-stack-overflow mr-2" aria-hidden="true"></i></a>
-        </span>
-    </div>
-</div>
- -->
-
-
-
-
-
-
-
 <nav class="">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-evenly h-16">
-            <div class="hidden sm:block profile-name font-bold" (click)="navigateTo('')">Adhithyan Srinivasan</div>
+            <div class="hidden sm:block profile-name font-bold cursor-pointer" (click)="navigateTo('')">Adhithyan Srinivasan</div>
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <button type="button" (click)="openMenu = !openMenu"
                     class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
